@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*------------------------------------------------------------------
+ 
+1. Body
+    2. Header
+    3. Title
+    4. Content
+        4.1 Buttons
+        4.2 Forms
+         4.2.1 Login Form
+        4.3 Tables
+         4.3.1 Scorecard Overview
+         4.3.2 KPI Overview
+         4.3.3 Select Table
+         4.3.4 Minimal Table
+        4.4 Link Icons / Actions
+        4.5 Tree View
+        4.6 Menu
+        4.7 Content Boxes
+    5. Block
+    6. Footer
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+  1. Body
+-------------------------------------------------------------------*/
+html, body{ min-height: 100%; }
+body { text-align: left; margin: 0; background: #6BB5DA url(../image/sitedesign/bg.png) 0 0 repeat-x; }
+hr{ border:1px solid #919191; }
+
+/*------------------------------------------------------------------
+  2. Header
+-------------------------------------------------------------------*/
+.headermenu{ border-bottom: 1px solid #c9c9c9; padding: 0 0 5px; margin-top: 15px; }
+.headermenu h2{ color: red; margin: 0; padding: 0; font-size: 120%;}
+.headermenu ul{ list-style: none; padding: 0; margin-left: 0; }
+.headermenu ul li{ float: left; margin-left: 10px; }
+#logo{
+   position: relative;
+   width: 250px;
+   height: 20px;
+   float: right;
+   line-height: 10px;
+   font-size: 15px;
+   color: #9F9F9F;
+   font-weight: bold;
+}
+#logo img{ position: absolute; top: -10px; left: -40px }
+
+/*------------------------------------------------------------------
+  3. Title
+-------------------------------------------------------------------*/
+.title h1{   
+   color:#D90000;
+   font-family:Georgia,"Times New Roman",Times,serif;
+   font-size:50px;
+   line-height:120%;
+   margin:0.6em 0pt 0pt;
+}
+.title h2{ padding: 0; margin: 0; }
+.title div.titlecontent{
+   color:#666666;
+   display:block;
+   margin-left: 20px;
+}
+.title h3{ padding-bottom: 2px; margin-bottom: 2px; }
+
+/*------------------------------------------------------------------
+  4. Content
+-------------------------------------------------------------------*/
+#content{
+   width: 870px;
+   margin: 20px auto;
+   position: relative;
+   
+   border: 1px solid #000;
+   background-color: #fff;
+   padding: 10px;
+}
+.content-title{ margin-top: 10px; }
+.content-title h2{ margin-bottom: 5px; }
+.content-title .fullname{ padding-left: 7px; }
+.user-options { float:right; margin-top: 10px; }
+.user-options ul{ list-style: none; }
+.user-options ul li{ float: left; margin-left: 5px; }
+.user-options ul li a{ display: block; text-decoration: none; color: #0078CC; padding: 3px 5px; }
+.user-options ul li a:hover{ background-color: #A6D7FF; }
+
+/*------------------------------------------------------------------
+  4.1 Buttons
+-------------------------------------------------------------------*/
+.buttons a, button{
+	float:left;
+	margin:0 7px 0 0;
+	text-decoration:none;
+	background-color:#f5f5f5;
+	border:1px solid #dedede;
+	border-top:1px solid #eee;
+	border-left:1px solid #eee;
+	padding:5px 10px 6px 7px;
+	display:block;
+	cursor:pointer;
+	font-size:100%;
+	line-height:130%;
+	color:#333;
+	font-weight:bold;
+}
+button{ 
+	font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+	width:auto;
+	overflow:visible;
+	font-weight:bold;
+	padding:4px 10px 3px 7px; 
+}
+button[type]{
+	width:auto;
+	padding:5px 10px 5px 7px; 
+	line-height:17px; 
+}
+*:first-child+html button[type]{
+	padding:4px 10px 3px 7px; 
+}
+button img, .buttons a img{
+	margin:0 3px -3px 0 !important;
+	width:16px;
+	height:16px;
+	padding:0 !important;
+	border:none !important;
+}
+button:hover, .buttons a:hover{
+	background-color:#dff4ff;
+	border:1px solid #c2e1ef;
+	color:#336699;
+}
+.buttons a:active{
+	background-color:#6299c5;
+	border:1px solid #6299c5;
+	color:#fff;
+}
+button.positive, .buttons a.positive{ color:#529214; }
+.buttons a.positive:hover, button.positive:hover{
+	background-color:#E6EFC2;
+	border:1px solid #C6D880;
+	color:#529214;
+}
+.buttons a.positive:active, td.positive{
+	background-color:#529214;
+	border:1px solid #529214;
+	color:#fff;
+}
+.buttons a.negative, button.negative{color:#d12f19;}
+.buttons a.negative:hover, button.negative:hover{background:#fbe3e4;border:1px solid #fbc2c4;color:#d12f19;}
+.buttons a.negative:active, td.negative{background-color:#d12f19;border:1px solid #d12f19;color:#fff;}
+.button-section{ /*background-color: #4F81BD;*/ height: 28px; padding: 7px; width: 95%; }
+
+a.action{ text-decoration: none; }
+.edit{ margin-right: 5px; }
+.delete{ margin-right: 5px; }
+
+/*------------------------------------------------------------------
+  4.1.1 Admin Buttons
+-------------------------------------------------------------------*/
+.admin{ border: 1px solid #CECECE; padding: 10px; background-color: #E7E7E7; }
+
+/*------------------------------------------------------------------
+  4.2 Forms
+-------------------------------------------------------------------*/
+tr.even{ background-color: #C3D9FF; }
+input.full{ width: 90%; }
+form p { margin-bottom: 0.5em; }
+form{ text-align: left; padding-bottom: 10px;  }
+form fieldset div{ padding-bottom: 10px; }
+form fieldset div label{ padding-bottom: 3px; }
+
+.moreinfo{ font-size: 90%; }
+.required{ color: red; }
+.add-new{ display: none; }
+.lightblue-bg{ background-color: #D8E8FF; padding: 10px; border: 1px solid #4F81BD; }
+.error { width: 93%; }
+.hide{ display: none; }
+
+.success, .complete{
+   background: #E6EFC2 url(../image/sitedesign/accept.png) 5px 50% no-repeat;
+   padding-left: 25px; 
+}
+.complete{ color: #009D18; background-color: transparent; }
+.incomplete, .close{ color: red; background: url(../image/sitedesign/cross.png) 5px 50% no-repeat; padding-left: 25px; }
+.close{ color: black; padding-left: 22px; }
+
+/*------------------------------------------------------------------
+  4.2.1 Login Form
+-------------------------------------------------------------------*/
+h2.login{
+   
+}
+fieldset.login{
+   
+}
+
+/*------------------------------------------------------------------
+  4.3 Tables
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+  4.3.1 Scorecard Overview
+-------------------------------------------------------------------*/
+.scorecard a{   text-decoration: none; }
+.scorecard a:hover{ text-decoration: underline; }
+
+/*------------------------------------------------------------------
+  4.3.2 KPI Overview
+-------------------------------------------------------------------*/
+.kpi-overview td{
+   vertical-align: top;
+}
+
+/*------------------------------------------------------------------
+  4.3.3 Select Table
+-------------------------------------------------------------------*/
+table.select-table{ border: 1px solid #9f9f9f; background-color: #fff; }
+table.select-table a{ text-decoration: none; }
+table.select-table tr{ cursor: pointer; }
+table.select-table tr:hover td, table.select-table tr:hover td a{ background-color: #000; color: white; }
+.hide-select{ display: none; }
+
+/*------------------------------------------------------------------
+  4.3.4 Minimal Table
+-------------------------------------------------------------------*/
+table.minimal { clear: both; }
+table.minimal thead tr th{ background-color: transparent; padding-left: 5px; border-bottom: 1px solid #B5C6DE; border-left: 1px solid #B5C6DE; }
+table.minimal thead tr th.first{ border-left: none; }
+table.minimal tbody tr td{ vertical-align: top; border-left: 1px solid #B5C6DE; }
+table.minimal tbody tr td.first{ border-left: none; }
+
+table.minimal thead tr th, table.minimal tbody tr td{ padding-left: 10px; }
+
+table.minimal tbody tr td a{ text-decoration: none; }
+table.minimal-border{ border: 1px solid #B5C6DE; }
+
+/*------------------------------------------------------------------
+4.4 Link Icons / Actions
+-------------------------------------------------------------------*/
+.view{ margin-left: 5px; padding: 5px 0 0 20px; background: url(../image/sitedesign/page.png) left center no-repeat; }
+.edit{ padding: 2px 0 2px 20px; background: url(../image/sitedesign/page_edit.png) 0 0 no-repeat; }
+.delete{ padding: 2px 0 2px 20px; background: url(../image/sitedesign/delete.png) 0 0 no-repeat; }
+
+
+/*------------------------------------------------------------------
+4.5 Tree View
+-------------------------------------------------------------------*/
+/*
+.treeview span{ }
+.treeview li{ height: 18px; }
+*/
+
+
+/*----------------------------------------
+ 4.6 Menu
+ ---------------------------------------*/
+.menu { width: 100%; padding: 0px; margin-bottom: 30px; float: left; border-bottom: 1px solid #D0D0D0; padding-bottom: 10px;  }
+.menu ul { margin: 10px 0 0 0; padding-left: 0px;}
+.menu li { display: inline; font: bold 14px/14px "Arial"; text-transform: lowercase; letter-spacing: -1px; float: left; }
+.menu li ul { display: none;}
+.menu li a { text-decoration: none; padding-left: 7px; margin-right: 1px; background: url(../image/sitedesign/menu-left.png) no-repeat left top; float: left;}
+.menu li a span { font-weight: bold; padding: 3px 7px 3px 0px; display: block; background: url(../image/sitedesign/menu-right.png) no-repeat right top; float: right; }
+.menu li a span { float: none; color: #fd822f;}
+.menu li a:hover { background-position: 0% -20px; color:#fff; text-decoration: none;}
+.menu li a:hover span { background-position: 100% -20px; color:#fff;}
+
+.menu .current_page_item a { background: url(../image/sitedesign/menu-left-h.png) no-repeat left bottom; color:#fff; }
+.menu .current_page_item a span, .menu .current_page_item a:visited span, .menu .current_page_item a:hover span { background: url(../image/sitedesign/menu-right-h.png) no-repeat right bottom; color:#fff; }
+.menu .back_button{ margin-right: 200px; }
+.menu .delete{ float: right; }
+.menu .delete a span{ color: red; }
+.scs1 { float: left; width: 650px; margin-right: 10px;}
+
+/*----------------------------------------
+ 4.7 Content Boxes
+ ---------------------------------------*/
+.content-box{ width: 95%; margin: 10px auto 30px; }
+.content-box h3 { padding-bottom: 3px; border-bottom: 1px solid #9f9f9f; margin-bottom: 2px; }
+.content-box h3 .moreinfo{ font-size: 0.7em; color: #8A8A8A;  }
+.content-box h3 .edit{ display: none; font-size: 0.7em; text-decoration: none; }
+.content-box h3:hover .edit{ display: inline; }
+.content-box .contents{ padding-left: 10px; background-color: #E5ECF9; }
+.content-box #rating{ padding-left: 10px; }
+.content-box .contents-edit{ padding-left: 10px; }
+.content-box .edit{ margin-left: 10px; }
+
+
+/*------------------------------------------------------------------
+  5. Block
+-------------------------------------------------------------------*/
+.block h3{
+   border-bottom: 1px solid #c9c9c9;
+   padding-bottom: 2px;
+}
+
+/*------------------------------------------------------------------
+  5. Block
+-------------------------------------------------------------------*/
+#footer{ width: 870px; margin: 20px auto; text-align: center; color: #fff; }
+#footer em{ color: green; }
